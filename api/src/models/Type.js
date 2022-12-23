@@ -4,7 +4,7 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   // defino el modelo
   // Este es el nombre de mi tabla y las propiedades
-  sequelize.define('pokemon', {
+  sequelize.define('type', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -14,24 +14,6 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    life: {
-      type: DataTypes.STRING
-    },
-    attack: {
-      type: DataTypes.STRING
-    },
-    defense: {
-      type: DataTypes.STRING
-    },
-    velocity: {
-      type: DataTypes.STRING
-    },
-    height: {
-      type: DataTypes.STRING
-    },
-    weight: {
-      type: DataTypes.STRING
-    },
+    }
   });
 };
